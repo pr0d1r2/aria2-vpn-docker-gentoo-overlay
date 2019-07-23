@@ -1,0 +1,11 @@
+<repositories version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>aria2-vpn-docker</name>
+		<description lang="en">Gentoo overlay with aria2 configured for downloading via VPN</description>
+		<homepage>https://github.com/pr0d1r2/aria2-vpn-docker-gentoo-overlay</homepage>
+		<owner type="person">
+			<name>Marcin Nowicki</name>
+		</owner>
+		<source type="git">git://github.com/pr0d1r2/aria2-vpn-docker-gentoo-overlay.git</source>
+	</repo>
+</repositories>
