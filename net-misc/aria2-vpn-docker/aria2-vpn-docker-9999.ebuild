@@ -22,16 +22,12 @@ app-admin/pwgen
 "
 DEPEND="${RDEPEND}"
 
-src_prepare() {
-	mv pia_network_setup.sh pia_network_setup
-	mv aria2_vpn_pia.sh aria2_vpn_pia
-}
-
 src_compile() {
-	echo "No need for compilation."
+	cat pia_network_setup.sh > aria2_vpn_pia
+	cat aria2_vpn_pia.sh >> aria2_vpn_pia
+	echo 'aria2_vpn_pia $@ || exit $?' >> aria2_vpn_pia
 }
 
 src_install() {
-	dobin pia_network_setup
 	dobin aria2_vpn_pia
 }
