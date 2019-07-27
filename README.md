@@ -7,7 +7,7 @@ For now it supports only privateinternetaccess.
 ## Setup
 
 ```shell
-layman -o https://raw.github.com/pr0d1r2/aria2-vpn-docker-overlay/master/repositories.xml -f -a aria2-vpn-docker
+layman -o https://raw.githubusercontent.com/pr0d1r2/aria2-vpn-docker-gentoo-overlay/master/repositories.xml -f -a aria2-vpn-docker
 emerge -a aria2-vpn-docker
 ```
 
